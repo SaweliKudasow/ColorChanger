@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ChangeColor/button.css">
+    <link rel="stylesheet" href="ChangeColor/wrapper.css">
+    <link rel="stylesheet" href="Color/colorAnim.css">
+    <link rel="stylesheet" href="Color/wrapper.css">
+    <link rel="stylesheet" href="History/button.css">
+    <link rel="stylesheet" href="History/history.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Color Changer</title>
+</head>
+<body>
+
+    <!-- Current Color Display -->
+    <div class="currentColor">
+        <p id="currentColorText">#efefef</p>
+    </div>
+
+    <!-- Haupt Knopf -->
+    <div class="buttonWrapper">
+        <button onclick="changeColor()" class="changeColor">New Color</button>
+    </div>
+
+    <!-- Farbe -->
+    <div class="colorWrapper" onclick="copyColor()">
+        <p id="color">Copy</p>
+    </div>
+
+    <!-- Verlauf -->
+    <button class="openHistory" onclick="toggleHistory()">History</button>
+
+    <script src="ChangeColor/changeColor.js"></script>
+    <script src="Color/copyColor.js"></script>
+    <script src="History/history.js"></script>
+</body>
+</html>

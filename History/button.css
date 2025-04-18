@@ -1,0 +1,28 @@
+.openHistory {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    background: #ffffff4b;
+    color: black;
+    font-size: 18px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.openHistory:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.openHistory:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
+}

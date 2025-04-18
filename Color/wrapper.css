@@ -1,0 +1,31 @@
+.colorWrapper {
+    background: #ffffff4b;
+    width: auto;
+    height: auto;
+    padding: 8px 16px;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.colorWrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.colorWrapper:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
+}
+
+.colorWrapper p {
+    font-size: 18px;
+    margin: 0;
+    color: black;
+}
