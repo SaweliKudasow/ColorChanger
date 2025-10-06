@@ -68,7 +68,7 @@ function showHistory() {
 
     if (colorHistory.length === 0) {
         const noHistory = document.createElement('div');
-        noHistory.textContent = 'История пуста';
+        noHistory.textContent = 'History is empty';
         noHistory.style.textAlign = 'center';
         noHistory.style.padding = '20px';
         historyContainer.appendChild(noHistory);
