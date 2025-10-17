@@ -1,4 +1,4 @@
-# 🎨 Color Changer
+# 🎨 Color Generator
 
 A small interactive web app where you can **generate random HEX colors**, **copy them in one click**, see them as **animated circles**, and **browse recent colors** via a simple history panel.  
 Built with **HTML, CSS, and JavaScript**, it showcases a clean UI, smooth visuals, and handy UX details.
@@ -38,19 +38,7 @@ Built with **HTML, CSS, and JavaScript**, it showcases a clean UI, smooth visual
 
 ## 🚀 How to Run
 
-1. Clone or download this repository  
-2. Open `index.html` in your browser  
-3. Click **New Color** to generate colors, **Copy** to copy HEX, and **History** to toggle recent colors
-
----
-
-## 🎨 Customization
-
-You can easily change:
-- Max circles on screen → edit `maxCircles` in `ChangeColor/changeColor.js`  
-- History size → adjust the limit in `History/history.js`  
-- Animation/look → tweak styles in `ChangeColor/*.css`, `Color/*.css`, `History/*.css`, and `style.css`  
-- Copy feedback → replace `alert` in `Color/copyColor.js` with a toast/snackbar
+- Visit [this page](https://sawelikudasow.github.io/ColorGenerator/).
 
 ---
 
