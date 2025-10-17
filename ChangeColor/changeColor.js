@@ -27,11 +27,19 @@ function changeColor() {
     document.body.appendChild(circle);
     circles.push(circle);
 
-    // alte Kreise löschen
-    if (circles.length > maxCircles) {
-        const oldCircle = circles.shift();
-        oldCircle.remove();
-    }
+    // Wird am Ende der Animation ausgeführt
+    circle.addEventListener('animationend', () => {
+        // Farbe des body auf farbe des kreises setzen
+        document.body.style.backgroundColor = randomColor;
+
+        // Kreis löschen
+        if (circles.length > 0) {
+            const oldCircle = circles.shift();
+            if (oldCircle && oldCircle.parentNode) {
+                oldCircle.remove();
+            }
+        }
+    });
 
     // Update both color displays
     document.getElementById('currentColorText').textContent = randomColor;
